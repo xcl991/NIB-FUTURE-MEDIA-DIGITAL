@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIB FUTURE MEDIA DIGITAL - Meta Ads Specialist</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="NIB FUTURE MEDIA DIGITAL - Meta Ads Specialist">
+    <meta name="description" content="NIB FUTURE MEDIA DIGITAL adalah leading market dalam Meta Ads di daerahnya. Kami menyediakan layanan periklanan profesional dengan strategi terukur untuk pertumbuhan bisnis Anda.">
+    <meta name="keywords" content="Meta Ads, Facebook Ads, Instagram Ads, Digital Marketing, Periklanan, NIB FUTURE MEDIA DIGITAL">
+    <meta name="author" content="NIB FUTURE MEDIA DIGITAL">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://futuremediadigitall.site/">
+    <meta property="og:title" content="NIB FUTURE MEDIA DIGITAL - Meta Ads Specialist">
+    <meta property="og:description" content="NIB FUTURE MEDIA DIGITAL adalah leading market dalam Meta Ads di daerahnya. Kami menyediakan layanan periklanan profesional dengan strategi terukur untuk pertumbuhan bisnis Anda.">
+    <meta property="og:image" content="https://ik.imagekit.io/xcl991/BG-Creative-1">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="NIB FUTURE MEDIA DIGITAL">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://futuremediadigitall.site/">
+    <meta property="twitter:title" content="NIB FUTURE MEDIA DIGITAL - Meta Ads Specialist">
+    <meta property="twitter:description" content="NIB FUTURE MEDIA DIGITAL adalah leading market dalam Meta Ads di daerahnya. Kami menyediakan layanan periklanan profesional dengan strategi terukur untuk pertumbuhan bisnis Anda.">
+    <meta property="twitter:image" content="https://ik.imagekit.io/xcl991/BG-Creative-1">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-blue: #0A2342;
+            --navy-light: #1A3A5F;
+            --navy-dark: #07182E;
+            --accent-blue: #2563EB;
+            --accent-light: #3B82F6;
+            --white: #FFFFFF;
+            --gray-100: #F3F4F6;
+            --gray-200: #E5E7EB;
+            --gray-300: #D1D5DB;
+            --gray-400: #9CA3AF;
+            --gray-500: #6B7280;
+            --gray-600: #4B5563;
+            --gray-700: #374151;
+            --gray-800: #1F2937;
+        }
+
+        html, body {
+            height: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-700);
+            background: var(--navy-dark);
+        }
+
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--navy-dark);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent-blue);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-light);
+        }
+
+        .nav-links a.active {
+            color: var(--accent-light);
+        }
+
+        /* Page Sections */
+        .page {
+            display: none;
+            flex: 1;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: calc(100vh - 80px);
+            background: linear-gradient(135deg,
+                var(--navy-dark) 0%,
+                var(--navy-blue) 50%,
+                var(--navy-light) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://ik.imagekit.io/xcl991/BG-Creative-1') center/cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--accent-light);
+            display: block;
+            font-size: 1.2em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: var(--gray-200);
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-light));
+            color: var(--white);
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 99, 235, 0.6);
+        }
+
+        /* About Section */
+        .about-section {
+            background: var(--white);
+            padding: 6rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--navy-blue);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray-500);
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--navy-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-highlight {
+            background: linear-gradient(135deg, var(--navy-blue), var(--navy-light));
+            color: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+        }
+
+        .about-highlight h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .about-highlight p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        /* Services Section */
+        .services-section {
+            background: var(--gray-100);
+            padding: 6rem 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-light));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--white);
+        }
+
+        .service-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--navy-blue);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--gray-600);
+            font-size: 1rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--navy-blue), var(--navy-light));
+            padding: 5rem 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: var(--white);
+        }
+
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--accent-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--white);
+            padding: 6rem 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--navy-blue);
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--accent-blue);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .contact-item h4 {
+            font-weight: 600;
+            color: var(--navy-blue);
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-item p {
+            color: var(--gray-600);
+        }
+
+        .contact-form {
+            background: var(--gray-100);
+            padding: 2.5rem;
+            border-radius: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--navy-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+
+        .submit-button {
+            width: 100%;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-light));
+            color: var(--white);
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Legal Pages */
+        .legal-page {
+            background: var(--white);
+            padding: 4rem 2rem;
+            flex: 1;
+        }
+
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .legal-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--navy-blue);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--accent-blue);
+        }
+
+        .legal-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--navy-blue);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-content p,
+        .legal-content ul {
+            color: var(--gray-600);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .legal-content ul {
+            padding-left: 2rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-content .last-updated {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--navy-dark);
+            padding: 3rem 2rem 1.5rem;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-brand h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand h4 span {
+            color: var(--accent-light);
+        }
+
+        .footer-brand p {
+            color: var(--gray-400);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .footer-column h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-column ul a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .footer-column ul a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 1.5rem;
+            text-align: center;
+            color: var(--gray-500);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-highlight {
+                padding: 2rem;
+            }
+
+            .about-highlight h4 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo" onclick="showPage('index')">NIB FUTURE <span>MEDIA DIGITAL</span></a>
+                <div class="nav-links">
+                    <a onclick="showPage('index')" class="nav-link active" data-page="index">Beranda</a>
+                    <a onclick="showPage('privacy')" class="nav-link" data-page="privacy">Privacy</a>
+                    <a onclick="showPage('terms')" class="nav-link" data-page="terms">Terms</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Index Page -->
+        <div id="index" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>
+                        NIB FUTURE MEDIA DIGITAL
+                        <span>Meta Ads Specialist</span>
+                    </h1>
+                    <p class="subtitle">Leading Market dalam Meta Ads di Daerah Anda - Strategi Terukur untuk Pertumbuhan Bisnis</p>
+                    <a href="#contact" class="cta-button">Mulai Sekarang</a>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="container">
+                    <h2 class="section-title">Tentang Kami</h2>
+                    <p class="section-subtitle">Mitra Terpercaya untuk Kesuksesan Digital Marketing Anda</p>
+
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h3>Ahli Meta Ads Terpercaya</h3>
+                            <p><strong>NIB FUTURE MEDIA DIGITAL</strong> adalah perusahaan periklanan profesional yang berfokus pada layanan Meta Ads (Facebook & Instagram Ads). Dengan NIB 1912240005033 dan pengalaman dalam industri digital marketing, kami berkomitmen membantu bisnis Anda mencapai target pemasaran secara efektif dan efisien.</p>
+                            <p>Tim kami terdiri dari ahli berpengalaman dalam mengelola kampanye berbayar di platform Meta, dengan pendekatan berbasis data dan ROI (Return on Investment) yang terukur.</p>
+                            <p>Berlokasi di Menara Cakrawala, Jakarta, kami siap membantu bisnis dari berbagai skala untuk berkembang melalui strategi periklanan digital yang tepat.</p>
+                        </div>
+                        <div class="about-highlight">
+                            <h4>Mengapa Memilih Kami?</h4>
+                            <p>✓ Leading market dalam Meta Ads di daerah kami<br>
+                            ✓ Strategi berbasis data dan hasil<br>
+                            ✓ Pengalaman dengan berbagai industri<br>
+                            ✓ transparansi penuh dalam setiap kampanye<br>
+                            ✓ Laporan yang komprehensif dan mudah dipahami</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="services-section">
+                <div class="container">
+                    <h2 class="section-title">Layanan Kami</h2>
+                    <p class="section-subtitle">Solusi Meta Ads Lengkap untuk Pertumbuhan Bisnis Anda</p>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 18c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm3-10H9V7h6v3z"/></svg>
+                            </div>
+                            <h3>Facebook Ads</h3>
+                            <p>Kelola kampanye iklan Facebook yang tersegmentasi dengan tepat, mencapai audiens yang tepat dengan pesan yang relevan untuk konversi maksimal.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                            </div>
+                            <h3>Instagram Ads</h3>
+                            <p>Buat kampanye visual yang menarik di Instagram, memanfaatkan format Story, Reels, dan Feed untuk engagement yang lebih tinggi.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            </div>
+                            <h3>Audience Targeting</h3>
+                            <p>Segmentasi audiens yang presisi berdasarkan demografi, minat, perilaku, dan custom audience untuk hasil kampanye yang optimal.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                            </div>
+                            <h3>Analytics & Reporting</h3>
+                            <p>Laporan performa yang komprehensif dengan metrik penting untuk membantu Anda membuat keputusan berbasis data yang tepat.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                            </div>
+                            <h3>Conversion Optimization</h3>
+                            <p>Optimasi landing page dan funnel konversi untuk memaksimalkan ROI dari setiap iklan yang Anda jalankan.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                            </div>
+                            <h3>Brand Awareness</h3>
+                            <p>Tingkatkan visibilitas brand Anda dengan strategi kampanye awareness yang mencapai audiens yang lebih luas secara efektif.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Kampanye Berhasil</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Klien Puas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5x</div>
+                        <div class="stat-label">Rata-rata ROI</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section" id="contact">
+                <div class="container">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <p class="section-subtitle">Siap Membantu Bisnis Anda Bertumbuh</p>
+
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h3>Informasi Kontak</h3>
+
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <div>
+                                    <h4>Alamat Kantor</h4>
+                                    <p>Menara Cakrawala, Jl. M.H. Thamrin No.9 12th floor,<br>RT.2/RW.1, Kebon Sirih, Menteng,<br>Central Jakarta City, Jakarta 10340</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                <div>
+                                    <h4>Telepon</h4>
+                                    <p>+62 838 2714 8952</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>manager@futuremediadigitall.site</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                                <div>
+                                    <h4>NIB Perusahaan</h4>
+                                    <p>1912240005033</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" placeholder="Masukkan nama Anda">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Masukkan email Anda">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" placeholder="Masukkan nomor telepon">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" rows="4" placeholder="Tuliskan pesan Anda"></textarea>
+                            </div>
+                            <button class="submit-button" onclick="submitForm()">Kirim Pesan</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Privacy Page -->
+        <div id="privacy" class="page">
+            <section class="legal-page">
+                <div class="legal-content">
+                    <h2>Kebijakan Privasi</h2>
+                    <p><strong>NIB FUTURE MEDIA DIGITAL</strong> ("Kami") berkomitmen untuk melindungi privasi data pribadi Anda. Dokumen ini menjelaskan bagaimana Kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda.</p>
+
+                    <h3>1. Informasi yang Kami Kumpulkan</h3>
+                    <p>Kami dapat mengumpulkan informasi berikut:</p>
+                    <ul>
+                        <li><strong>Informasi Kontak:</strong> Nama, email, nomor telepon, dan alamat</li>
+                        <li><strong>Informasi Bisnis:</strong> Detail perusahaan, industri, dan kebutuhan periklanan</li>
+                        <li><strong>Informasi Penggunaan:</strong> Cara Anda menggunakan layanan dan berinteraksi dengan situs Kami</li>
+                        <li><strong>Informasi Teknis:</strong> Alamat IP, jenis perangkat, dan data navigasi</li>
+                    </ul>
+
+                    <h3>2. Penggunaan Informasi</h3>
+                    <p>Kami menggunakan informasi Anda untuk:</p>
+                    <ul>
+                        <li>Menyediakan layanan Meta Ads yang Anda minta</li>
+                        <li>Mengkomunikasikan dengan Anda mengenai layanan Kami</li>
+                        <li>Menganalisis dan meningkatkan layanan Kami</li>
+                        <li>Mematuhi kewajiban hukum dan peraturan</li>
+                        <li>Mencegah penipuan dan aktivitas ilegal</li>
+                    </ul>
+
+                    <h3>3. Perlindungan Data</h3>
+                    <p>Kami menerapkan langkah-langkah keamanan yang wajar untuk melindungi data pribadi Anda dari akses yang tidak sah, perubahan, atau penghancuran. Data disimpan di server yang aman dan diakses oleh personel yang berwenang.</p>
+
+                    <h3>4. Berbagi Informasi</h3>
+                    <p>Kami tidak menjual data pribadi Anda kepada pihak ketiga. Kami hanya akan membagikan informasi Anda dalam situasi berikut:</p>
+                    <ul>
+                        <li>Dengan persetujuan Anda</li>
+                        <li>Dengan mitra layanan yang membantu operasi Kami</li>
+                        <li>Sesuai persyaratan hukum atau peraturan yang berlaku</li>
+                        <li>Untuk melindungi hak, properti, atau keselamatan Kami atau pihak lain</li>
+                    </ul>
+
+                    <h3>5. Hak Anda</h3>
+                    <p>Anda memiliki hak untuk:</p>
+                    <ul>
+                        <li>Mengakses data pribadi Anda</li>
+                        <li>Mengoreksi data yang tidak akurat</li>
+                        <li>Menghapus data pribadi Anda (dalam batas peraturan yang berlaku)</li>
+                        <li>Menarik persetujuan untuk pemrosesan data</li>
+                        <li>Mengajukan keluhan kepada otoritas perlindungan data</li>
+                    </ul>
+
+                    <h3>6. Kebijakan Cookie</h3>
+                    <p>Situs Kami menggunakan cookie untuk meningkatkan pengalaman pengguna, menganalisis lalu lintas, dan menyediakan konten yang relevan. Anda dapat mengatur preferensi cookie melalui browser Anda.</p>
+
+                    <h3>7. Perubahan Kebijakan</h3>
+                    <p>Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan akan diumumkan melalui situs Kami. Penggunaan terus menerus layanan Kami setelah perubahan menunjukkan penerimaan Anda terhadap kebijakan yang diperbarui.</p>
+
+                    <h3>8. Kontak Kami</h3>
+                    <p>Jika Anda memiliki pertanyaan atau keluhan mengenai kebijakan privasi Kami, silakan hubungi Kami di:</p>
+                    <ul>
+                        <li><strong>Email:</strong> manager@futuremediadigitall.site</li>
+                        <li><strong>Telepon:</strong> +62 838 2714 8952</li>
+                        <li><strong>Alamat:</strong> Menara Cakrawala, Jl. M.H. Thamrin No.9 12th floor, Jakarta 10340</li>
+                    </ul>
+
+                    <p class="last-updated">Terakhir diperbarui: 23 September 2025</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Terms Page -->
+        <div id="terms" class="page">
+            <section class="legal-page">
+                <div class="legal-content">
+                    <h2>Syarat & Ketentuan</h2>
+                    <p>Syarat dan ketentuan ini mengatur penggunaan layanan yang disediakan oleh <strong>NIB FUTURE MEDIA DIGITAL</strong> ("Kami"). Dengan menggunakan layanan Kami, Anda setuju untuk mematuhi syarat-syarat ini.</p>
+
+                    <h3>1. Penerimaan Syarat</h3>
+                    <p>Dengan mengakses atau menggunakan situs dan layanan Kami, Anda menyatakan bahwa Anda telah membaca, memahami, dan menyetujui untuk terikat oleh syarat dan ketentuan ini. Jika Anda tidak setuju dengan syarat ini, jangan gunakan layanan Kami.</p>
+
+                    <h3>2. Definisi</h3>
+                    <ul>
+                        <li><strong>"Kami" atau "Perusahaan":</strong> NIB FUTURE MEDIA DIGITAL, perusahaan periklanan dengan NIB 1912240005033</li>
+                        <li><strong>"Layanan":</strong> Layanan periklanan Meta Ads dan digital marketing yang Kami sediakan</li>
+                        <li><strong>"Klien" atau "Anda":</strong> Individu atau entitas bisnis yang menggunakan layanan Kami</li>
+                        <li><strong>"Kampanye":</strong> Iklan berbayar yang Kami kelola atas nama Klien di platform Meta</li>
+                    </ul>
+
+                    <h3>3. Layanan Kami</h3>
+                    <p><strong>NIB FUTURE MEDIA DIGITAL</strong> menyediakan layanan periklanan termasuk tetapi tidak terbatas pada:</p>
+                    <ul>
+                        <li>Manajemen Facebook Ads dan Instagram Ads</li>
+                        <li>Perencanaan dan strategi kampanye berbasis data</li>
+                        <li>Targeting dan segmentasi audiens</li>
+                        <li>Optimasi konversi</li>
+                        <li>Analisis dan laporan performa</li>
+                    </ul>
+
+                    <h3>4. Kewajiban Klien</h3>
+                    <p>Sebagai Klien, Anda setuju untuk:</p>
+                    <ul>
+                        <li>Menyediakan informasi yang akurat dan lengkap</li>
+                        <li>Menghormati hak kekayaan intelektual Kami dan pihak ketiga</li>
+                        <li>Memastikan semua materi iklan mematuhi hukum dan peraturan yang berlaku</li>
+                        <li>Membayar biaya layanan sesuai kesepakatan</li>
+                        <li>Memberikan akses yang diperlukan untuk mengelola kampanye</li>
+                    </ul>
+
+                    <h3>5. Kewajiban Perusahaan</h3>
+                    <p>Kami berkomitmen untuk:</p>
+                    <ul>
+                        <li>Menyediakan layanan dengan standar profesional yang tinggi</li>
+                        <li>Menjaga kerahasiaan informasi bisnis Klien</li>
+                        <li>Memberikan laporan yang akurat dan transparan</li>
+                        <li>Bertindak dalam kepentingan terbaik Klien</li>
+                        <li>Mengelola kampanye dengan integritas dan profesionalisme</li>
+                    </ul>
+
+                    <h3>6. Biaya dan Pembayaran</h3>
+                    <ul>
+                        <li>Biaya layanan akan dijelaskan dalam proposal atau perjanjian terpisah</li>
+                        <li>Biaya iklan (ad spend) ditanggung sepenuhnya oleh Klien</li>
+                        <li>Pembayaran harus dilakukan sesuai jadwal yang disepakati</li>
+                        <li>Keterlambatan pembayaran dapat mengakibatkan penangguhan layanan</li>
+                    </ul>
+
+                    <h3>7. Kebijakan Pengembalian Dana</h3>
+                    <ul>
+                        <li>Pembayaran untuk layanan yang sudah dilakukan tidak dapat dikembalikan</li>
+                        <li>Kasus khusus akan ditinjau secara per kasus</li>
+                        <li>Sisa budget iklan yang tidak digunakan dapat dikembalikan sesuai peraturan platform</li>
+                    </ul>
+
+                    <h3>8. Pembatasan Tanggung Jawab</h3>
+                    <p>Kami tidak bertanggung jawab atas:</p>
+                    <ul>
+                        <li>Hasil yang tidak tercapai karena faktor di luar kendali Kami</li>
+                        <li>Kerugian tidak langsung, insidental, atau konsekuensial</li>
+                        <li>Perubahan kebijakan atau algoritma platform Meta</li>
+                        <li>Downtime atau gangguan teknis dari pihak ketiga</li>
+                    </ul>
+
+                    <h3>9. Hak Kekayaan Intelektual</h3>
+                    <ul>
+                        <li>Semua materi yang Kami buat adalah milik Kami sampai dibayar penuh</li>
+                        <li>Klien memiliki hak penuh atas materi setelah pembayaran selesai</li>
+                        <li>Kami berhak menggunakan portofolio atau studi kasus tanpa mengungkap data rahasia Klien</li>
+                    </ul>
+
+                    <h3>10. Penghentian Layanan</h3>
+                    <p>Kami berhak menghentikan layanan jika:</p>
+                    <ul>
+                        <li>Klien melanggar syarat dan ketentuan ini</li>
+                        <li>Ada aktivitas curang atau tidak etis dari Klien</li>
+                        <li>Kegiatan ilegal yang melibatkan layanan Kami</li>
+                    </ul>
+
+                    <h3>11. Perubahan Syarat</h3>
+                    <p>Kami dapat memperbarui syarat dan ketentuan ini dari waktu ke waktu. Perubahan akan diberitahukan melalui situs Kami atau email. Penggunaan terus menerus layanan setelah perubahan menunjukkan penerimaan Anda.</p>
+
+                    <h3>12. Gugatan Sengketa</h3>
+                    <p>Sengketa yang timbul dari atau terkait dengan syarat dan ketentuan ini akan diselesaikan melalui negosiasi yang baik hati terlebih dahulu. Jika tidak mencapai kesepakatan, sengketa akan diajukan ke pengadilan yang berwenang di Jakarta, Indonesia.</p>
+
+                    <h3>13. Hukum yang Berlaku</h3>
+                    <p>Syarat dan ketentuan ini diatur oleh hukum Republik Indonesia. Setiap ketentuan yang tidak sesuai dengan hukum Indonesia akan dianggap tidak valid tanpa mempengaruhi ketentuan lainnya.</p>
+
+                    <h3>14. Kontak Kami</h3>
+                    <p>Untuk pertanyaan mengenai syarat dan ketentuan ini, hubungi:</p>
+                    <ul>
+                        <li><strong>Email:</strong> manager@futuremediadigitall.site</li>
+                        <li><strong>Telepon:</strong> +62 838 2714 8952</li>
+                        <li><strong>Alamat:</strong> Menara Cakrawala, Jl. M.H. Thamrin No.9 12th floor, Jakarta 10340</li>
+                    </ul>
+
+                    <p class="last-updated">Terakhir diperbarui: 23 September 2025</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>NIB FUTURE <span>MEDIA DIGITAL</span></h4>
+                    <p>Leading market dalam Meta Ads di daerah kami. Kami menyediakan layanan periklanan profesional dengan strategi terukur untuk pertumbuhan bisnis Anda.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Layanan</h5>
+                    <ul>
+                        <li><a href="#services">Facebook Ads</a></li>
+                        <li><a href="#services">Instagram Ads</a></li>
+                        <li><a href="#services">Audience Targeting</a></li>
+                        <li><a href="#services">Conversion Optimization</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Perusahaan</h5>
+                    <ul>
+                        <li><a onclick="showPage('index')">Tentang Kami</a></li>
+                        <li><a onclick="showPage('index')">Kontak</a></li>
+                        <li><a onclick="showPage('privacy')">Privacy Policy</a></li>
+                        <li><a onclick="showPage('terms')">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Informasi</h5>
+                    <ul>
+                        <li>NIB: 1912240005033</li>
+                        <li>KBLI: 73100 (Periklanan)</li>
+                        <li>Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 NIB FUTURE MEDIA DIGITAL. Semua Hak Dilindungi.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+
+            // Update nav links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-page') === pageId) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+
+            // Update URL hash without reloading
+            if (pageId === 'index') {
+                history.pushState(null, null, ' ');
+            } else {
+                history.pushState(null, null, '#' + pageId);
+            }
+        }
+
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !phone || !message) {
+                alert('Mohon lengkapi semua kolom formulir.');
+                return;
+            }
+
+            alert('Terima kasih ' + name + '! Pesan Anda telah terkirim. Tim kami akan segera menghubungi Anda.');
+        }
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', function(event) {
+            const hash = window.location.hash.replace('#', '');
+            if (hash === 'privacy' || hash === 'terms') {
+                showPage(hash);
+            } else {
+                showPage('index');
+            }
+        });
+
+        // Check URL hash on page load
+        window.addEventListener('load', function() {
+            const hash = window.location.hash.replace('#', '');
+            if (hash === 'privacy' || hash === 'terms') {
+                showPage(hash);
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
